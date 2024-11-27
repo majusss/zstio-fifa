@@ -122,7 +122,7 @@ export default function Home() {
           <p className="text-sm font-semibold text-yellow-600">Druga Edycja</p>
         </a>
         <h1
-          className="animate-fade-up bg-gradient-to-br from-stone-500 to-black bg-clip-text text-center font-display text-4xl font-extrabold tracking-[-0.02em] opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
+          className="animate-fade-up bg-gradient-to-bl to-stone-700 from-black gradient bg-clip-text text-transparent text-center font-display text-4xl font-extrabold tracking-[-0.02em] opacity-0 drop-shadow-sm [text-wrap:balance] md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
           Weź udział w Turnieju FIFA 23 <br className="max-md:hidden" /> i walcz
