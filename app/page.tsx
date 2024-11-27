@@ -226,7 +226,7 @@ export default function Home() {
               <>
                 <AccordionItem value={"" + i}>
                   <AccordionTrigger className="!no-underline">
-                    <p className="w-full animate-fade-up text-center font-display text-xl font-extrabold tracking-[-0.02em] text-black text-transparent drop-shadow-sm [text-wrap:balance] md:text-2xl md:leading-[5rem]">
+                    <p className="w-full animate-fade-up text-center font-display text-xl font-extrabold tracking-[-0.02em] text-black drop-shadow-sm [text-wrap:balance] md:text-2xl md:leading-[5rem]">
                       {ac.title}
                     </p>
                   </AccordionTrigger>
