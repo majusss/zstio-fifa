@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/alert-dialog";
 
 import Image from "next/image";
-import sponsor from "@/public/sponsor.jpg";
+import sponsor from "@/public/sponsor.png";
 import zstio from "@/public/icon-512x512.png";
 import {
   Accordion,
@@ -106,12 +106,12 @@ export default function Home() {
 
   return (
     <div className="grid">
+      <section className="z-10 md:mt-[25vh] flex w-full flex-col items-center justify-center px-5 xl:px-0">
       <Image
         src={zstio}
         alt="zstio logo"
-        className="fixed left-12 top-12 h-[128px] w-[128px]"
+        className="md:fixed md:left-12 md:top-12 h-[128px] w-[128px] -z-10 max-md:mt-32 max-md:mb-12"
       />
-      <section className="z-10 flex h-[80vh] w-full flex-col items-center justify-center px-5 xl:px-0">
         <a
           rel="noreferrer"
           href="https://www.facebook.com/share/U4tLZ83KEm18K14d/?mibextid=WC7FNe"
@@ -146,7 +146,7 @@ export default function Home() {
                 href="#"
               >
                 <Pencil />
-                <p>Zapisz sie</p>
+                <p className="text-nowrap">Zapisz sie</p>
               </a>
             </AlertDialogTrigger>
             <AlertDialogContent>
@@ -182,23 +182,23 @@ export default function Home() {
             href="#"
           >
             <FileText />
-            <p>Sprawdź regulamin</p>
+            <p className="text-nowrap">Sprawdź regulamin</p>
           </a>
         </div>
       </section>
-      <section className="z-10 flex w-full flex-col items-center justify-center px-5 xl:px-0">
+      <section className="z-10 mt-48 flex w-full flex-col items-center justify-center px-5 xl:px-0">
         <div className="flex flex-col items-center justify-center">
           <h1
             className="animate-fade-up text-center font-display text-3xl mb-12 font-extrabold tracking-[-0.02em] text-black opacity-0 drop-shadow-sm [text-wrap:balance] md:text-5xl md:leading-[5rem]"
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
           >
-            Nasz Sponsor - Sokołów S.A. <br className="max-md:hidden" />{" "}
+            Nasz Sponsor - Sokołów S.A. <br/>{" "}
             Tradycja od 1899
           </h1>
           <Image
             src={sponsor}
             alt="Logo sponsora"
-            className="h-[200px] w-[200px] rounded-full"
+            className="h-[200px] w-[200px]"
           />
           <p
             className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
@@ -211,7 +211,7 @@ export default function Home() {
       <section className="z-10 my-48 flex w-full flex-col items-center justify-center px-5 xl:px-0">
         <div className="flex flex-col items-center justify-center">
           <h1
-            className="animate-fade-up text-center font-display text-3xl font-extrabold tracking-[-0.02em] text-black opacity-0 drop-shadow-sm [text-wrap:balance] md:text-5xl md:leading-[5rem]"
+            className="animate-fade-up text-center mb-12 font-display text-3xl font-extrabold tracking-[-0.02em] text-black opacity-0 drop-shadow-sm [text-wrap:balance] md:text-5xl md:leading-[5rem]"
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
           >
             Regulamin
@@ -223,8 +223,7 @@ export default function Home() {
             defaultValue={"" + 0}
           >
             {accordionData.map((ac, i) => (
-              <>
-                <AccordionItem value={"" + i}>
+                <AccordionItem value={"" + i} key={i}>
                   <AccordionTrigger className="!no-underline">
                     <p className="w-full animate-fade-up text-center font-display text-xl font-extrabold tracking-[-0.02em] text-black drop-shadow-sm [text-wrap:balance] md:text-2xl md:leading-[5rem]">
                       {ac.title}
@@ -233,17 +232,13 @@ export default function Home() {
                   <AccordionContent className="flex justify-center">
                     <ul className="w-fit space-y-2">
                       {ac.paragraphs.map((pa, i) => (
-                        <li key={i} className="flex flex-row">
-                          <div>
-                            <ChevronRight />
-                          </div>
-                          <p className="font-semibold">{pa}</p>
+                        <li key={i} className="font-semibold">
+                          {pa}
                         </li>
                       ))}
                     </ul>
                   </AccordionContent>
                 </AccordionItem>
-              </>
             ))}
           </Accordion>
         </div>

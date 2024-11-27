@@ -4,7 +4,7 @@ import { sfPro, inter } from "./fonts";
 
 export const metadata = {
   title: "FIFA 23 - ZSTiO Jarosław",
-  description: "",
+  description: "Dołącz do Turnieju FIFA 23 w ZSTiO i pokaż swoje umiejętności w rywalizacji z najlepszymi graczami!",
 };
 
 export default async function RootLayout({
