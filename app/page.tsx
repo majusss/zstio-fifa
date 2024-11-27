@@ -189,7 +189,7 @@ export default function Home() {
       <section className="z-10 flex w-full flex-col items-center justify-center px-5 xl:px-0">
         <div className="flex flex-col items-center justify-center">
           <h1
-            className="animate-fade-up text-center font-display text-3xl font-extrabold tracking-[-0.02em] text-black text-transparent drop-shadow-sm [text-wrap:balance] md:text-5xl md:leading-[5rem]"
+            className="animate-fade-up text-center font-display text-3xl font-extrabold tracking-[-0.02em] text-black opacity-0 drop-shadow-sm [text-wrap:balance] md:text-5xl md:leading-[5rem]"
             style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
           >
             Nasz Sponsor - Sokołów S.A. <br className="max-md:hidden" />{" "}
@@ -201,7 +201,7 @@ export default function Home() {
             className="h-[200px] w-[200px] rounded-full"
           />
           <p
-            className="mt-6 animate-fade-up text-center text-gray-500 [text-wrap:balance] md:text-xl"
+            className="mt-6 animate-fade-up text-center text-gray-500 opacity-0 [text-wrap:balance] md:text-xl"
             style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
           >
             Kabanosy dla każdego uczesnika turnieju
