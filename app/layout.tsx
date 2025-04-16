@@ -16,8 +16,21 @@ export default async function RootLayout({
   return (
     <html lang="pl">
       <body className={cx(sfPro.variable, inter.variable)}>
-        <div className="fixed h-[100lvh] w-full bg-gradient-to-br from-indigo-50 via-white to-red-200" />
-        <main className="flex min-h-screen w-full flex-col items-center justify-center overflow-x-hidden">
+        <div className="fixed h-[100lvh] w-full bg-gradient-to-br from-blue-50 via-indigo-50 to-sky-100" />
+
+        {/* Dekoracyjne elementy w tle */}
+        <div className="fixed w-full h-full overflow-hidden pointer-events-none">
+          {/* Górny element */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+
+          {/* Dolny element */}
+          <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-blue-400/20 to-sky-300/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
+
+          {/* Środkowy element */}
+          <div className="absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-gradient-to-r from-indigo-400/10 to-blue-300/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+        </div>
+
+        <main className="flex min-h-screen w-full flex-col items-center justify-center overflow-x-hidden relative">
           {children}
         </main>
       </body>
