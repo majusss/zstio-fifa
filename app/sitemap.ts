@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     {
-      url: "https://precedent.dev",
+      url: "https://zstio-fifa.vercel.app",
       lastModified: new Date(),
     },
   ];
