@@ -3,9 +3,9 @@ import cx from "classnames";
 import { sfPro, inter } from "./fonts";
 
 export const metadata = {
-  title: "Champions League FIFA 23 - ZSTiO Jarosław - 30 kwietnia 2025",
+  title: "Champions League FIFA 23 - ZSTiO Jarosław - 23 maj 2025",
   description:
-    "Dołącz do Champions League FIFA 23 w ZSTiO i pokaż swoje umiejętności w rywalizacji z najlepszymi graczami ze szkół podstawowych! Turniej odbędzie się 30 kwietnia 2025 o godzinie 15:00.",
+    "Dołącz do Champions League FIFA 23 w ZSTiO i pokaż swoje umiejętności w rywalizacji z najlepszymi graczami ze szkół podstawowych! Turniej odbędzie się 23 maja 2025 o godzinie 15:00.",
 };
 
 export default async function RootLayout({

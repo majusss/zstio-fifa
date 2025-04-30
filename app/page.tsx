@@ -8,7 +8,7 @@ const ruleSections = [
   {
     title: "§1. Postanowienia ogólne",
     paragraphs: [
-      "1. Poniższy Regulamin Turnieju (w skrócie 'Regulamin') dotyczy rozgrywek 'Champions League Fifa 23' w ZSTiO Jarosław, który odbędzie się w dniach 30 kwietnia 2025 roku.",
+      "1. Poniższy Regulamin Turnieju (w skrócie 'Regulamin') dotyczy rozgrywek 'Champions League Fifa 23' w ZSTiO Jarosław, który odbędzie się w dniu 23 maja 2025 roku.",
       "2. Organizatorem turnieju jest szkoła ZSTIO Jarosław - opiekunami są nauczyciele Andrzej Ożyło i Przemysław Warecki.",
       "3. Każdy z uczestników Turnieju zobowiązany jest do zapoznania się z Regulaminem oraz jego przestrzegania. Przystąpienie do rozgrywek równoważne jest akceptacji postanowień Regulaminu.",
       "4. Udział w Turnieju jest otwarty i bezpłatny dla osób, które są uczniami szkół podstawowych.",

@@ -80,6 +80,28 @@ export function Hero() {
 
       <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="h-1 w-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full"></div>
+            <motion.h1
+              className="text-center font-display text-3xl font-extrabold tracking-[-0.02em] text-blue-900 drop-shadow-sm [text-wrap:balance] md:text-5xl"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1, duration: 0.6, ease: "easeOut" }}
+            >
+              Uwaga zmiana daty!
+            </motion.h1>
+            <div className="h-1 w-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full"></div>
+          </div>
+          <motion.p
+            className="text-center text-blue-700 font-medium mb-10 max-w-2xl"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
+          >
+            Zapraszamy 23 maja 2025 na turniej FIFA 23 w ZSTiO Jarosław!
+          </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -145,7 +167,7 @@ export function Hero() {
               className="flex items-center gap-2 text-blue-600 font-medium"
             >
               <Trophy className="h-8 w-8 text-blue-600" />
-              <p>30 kwietnia 2025 • 15:00</p>
+              <p>23 maj 2025 • 15:00</p>
             </motion.div>
           </motion.div>
 
